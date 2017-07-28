@@ -1,0 +1,64 @@
+.sec5 {
+    padding: 85px 0 90px;
+    z-index: 1;
+
+    @include media(w1024) {
+        padding: 45px 0;
+    }
+
+    @include media(w768) {
+        padding: 0;
+    }
+
+    &:before {
+        content: "";
+        background-color: $main-pink-light;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 50%;
+
+        @include media(w768) {
+            content: none;
+        }
+    }
+    
+    &__row {
+        display: flex;
+
+        @include media(w768) {
+            display: block;
+        }
+    }
+
+    &__col {
+        width: 50%;
+
+        @include media(w768) {
+            width: auto;
+        }
+
+        &_left {
+            color: white;
+            font-family: $el;
+            padding-right: 30px;
+
+            @include media(w768) {
+                background-color: $main-pink-light;
+                margin-right: -$container-side-padding-tablet;
+                margin-left: -$container-side-padding-tablet;
+                padding: 60px $container-side-padding-tablet;
+            }
+        }
+
+        &_right {
+            padding-left: 60px;
+
+            @include media(w768) {
+                background-color: white;
+                padding: 60px 0;
+            }
+        }
+    }
+}

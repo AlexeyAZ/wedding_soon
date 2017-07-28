@@ -1,0 +1,81 @@
+.photo-block {
+    display: flex;
+    align-items: flex-end;
+
+    @include media(w768) {
+        flex-flow: column;
+    }
+
+    &__item {
+        position: relative;
+        width: 50%;
+
+        &_text {
+            padding-left: 70px;
+
+            @include media(w768) {
+                order: 1;
+                margin-bottom: 30px;
+                padding-left: 0;
+            }
+        }
+
+        &_img {
+
+            @include media(w768) {
+                order: 2;
+                text-align: center;
+            }
+        }
+
+        @include media(w768) {
+            width: 100%;
+        }
+    }
+
+    &__arrow {
+        padding: 20px 0;
+    }
+
+    &__img-wrap {
+        //background-image: url("../img/decor-border-small.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        display: inline-block;
+        //padding: 80px 70px;
+        position: relative;
+        width: 100%;
+
+        @include media(w1024) {
+            padding-left: 0;
+        }
+
+        @include media(w768) {
+            display: block;
+            margin-left: -$container-side-padding-tablet;
+            margin-right: -$container-side-padding-tablet;
+            width: auto;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    &__img-border {
+        position: absolute;
+        top: -10%;
+        left: -11%;
+        height: 120%;
+        width: 122%;
+    }
+    
+    &__text {
+
+        @include media(w768) {
+            padding: 0 20px;
+        }
+    }
+}

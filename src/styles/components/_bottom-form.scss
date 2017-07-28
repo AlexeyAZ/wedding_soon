@@ -1,0 +1,58 @@
+.bottom-form-container {
+    background-color: $main-pink-light;
+    color: white;
+    padding: 60px 0 70px;
+
+    @include media(w768) {
+        margin-top: -10%;
+        margin-left: -$container-side-padding-tablet;
+        margin-right: -$container-side-padding-tablet;
+        position: relative;
+        z-index: 2;
+    }
+}
+.bottom-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 400px;
+
+    @include media(w1024) {
+        max-width: none;
+    }
+
+    &__title {
+        margin: 0 auto 2em;
+        max-width: 400px;
+
+        @include media(w1024) {
+            width: 90%;
+            max-width: none;
+        }
+    }
+
+    &__label {
+        display: block;
+        margin-bottom: 20px;
+        width: 100%;
+
+        @include media(w1024) {
+            width: 90%;
+        }
+
+        @include media (w768) {
+            
+        }
+
+    }
+
+    &__btn {
+        margin-bottom: 20px;
+        width: 100%;
+
+        @include media(w1024) {
+            width: 90%;
+        }
+    }
+}

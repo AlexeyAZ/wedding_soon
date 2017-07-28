@@ -1,0 +1,86 @@
+.sec1 {
+
+    &__wrap {
+        background-color: white;
+        padding: 0 60px 9vw;
+
+        @include media(w1024) {
+            padding: 0 0 9vw;
+        }
+
+        @include media(w768) {
+            padding-bottom: 0;
+        }
+    }
+
+    &__content {
+        background-image: url("../img/sec1-bg.jpg");
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        text-align: center;
+        padding: 8vw 0 6vw;
+
+        @include media(w768) {
+            padding: 40px 0;
+        }
+    }
+
+    &__border {
+        @include border-block(currentColor);
+        font-family: $el;
+        margin-bottom: 8em;
+        padding: 40px 10px;
+
+        @include media(w1024) {
+            padding: 30px 10px;
+        }
+
+        @include media(w768) {
+            margin-bottom: 30px;
+
+            br {
+                display: none;
+            }
+        }
+    }
+
+    &__title {
+        font-weight: bold;
+    }
+
+    &__note {
+        padding: 70px 0;
+
+        @include media(w768) {
+            padding: 40px 0;
+        }
+    }
+
+    &__note-border {
+        @include border-block($main-gray);
+        font-family: $el;
+        font-weight: 600;
+        text-align: center;
+        padding: 30px 10px;
+
+        @include media(w768) {
+            
+            br {
+                display: none;
+            }
+        }
+    }
+
+    &__note-text {
+
+        &_gray {
+            color: $main-gray;
+        }
+
+        &_pink {
+            color: $main-pink-lighten;
+        }
+    }
+}

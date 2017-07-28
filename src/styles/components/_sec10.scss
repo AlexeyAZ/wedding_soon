@@ -1,0 +1,25 @@
+.sec10 {
+    background-image: url("../img/sec10-bg.jpg");
+    padding: 110px 0;
+    z-index: 1;
+
+    @include media(w1024) {
+        padding: 70px 0;
+    }
+
+    @include media(w768) {
+        padding: 120px 0;
+    }
+
+    &:before {
+        content: "";
+        background-color: $main-pink-light;
+        opacity: 0.6;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+}

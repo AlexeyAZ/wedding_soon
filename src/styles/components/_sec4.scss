@@ -1,0 +1,57 @@
+.sec4 {
+    background-color: white;
+    overflow: hidden;
+    padding: 150px 0;
+
+    @include media(w768) {
+        padding: 10vw 0 20vw;
+    }
+
+    &__note {
+        position: absolute;
+        bottom: calc(100% + 30px);
+        right: 0;
+        padding: 30px 20px 30px 50px;
+        width: 120%;
+
+        @include media(w768) {
+            margin-bottom: 30px;
+            padding: 30px 20px;
+            position: static;
+            width: auto;
+        }
+    }
+
+    &__note-text {
+        
+        @include media(w1280) {
+            font-size: 30px;
+        }
+
+        @include media(w768) {
+            font-size: 23px;
+        }
+    }
+
+    &__photo-block-text {
+        margin-bottom: -40px;
+    }
+
+    &__photo-block-text-bold {
+        
+        @include media(w768) {
+            margin-bottom: 16vw;
+        }
+    }
+
+    &__flowers {
+        transform: translate(30%, 80%);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        @include media(w768) {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,104 @@
+.thanks {
+    padding: 0 60px;
+
+    @include media(w1024) {
+        padding: 0;
+    }
+
+    &__content {
+        background-image: url("../img/sec1-bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 60px;
+
+        @include media(w1024) {
+            padding: 20px;
+        }
+
+        @include media(w768) {
+            padding: 10px;
+        }
+    }
+
+    &__container {
+        border: 4px solid white;
+        color: white;
+        text-align: center;
+        padding: 60px 20px 30px;
+
+        @include media(w768) {
+            border-width: 2px;
+            padding: 30px 10px;
+        }
+    }
+
+    &__heading {
+        font-family: $el;
+        font-weight: 800;
+        font-size: 60px;
+        padding-bottom: 0.4em;
+
+        @include media(w1024) {
+            font-size: 40px;
+        }
+
+        @include media(w768) {
+            font-size: 30px;
+        }
+    }
+
+    &__title {
+        font-size: 28px;
+        margin-bottom: 1em;
+
+        @include media(w1024) {
+            font-size: 24px;
+        }
+
+        @include media(w768) {
+            font-size: 20px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 30px;
+        margin-bottom: 1em;
+
+        @include media(w1024) {
+            font-size: 25px;
+        }
+
+        @include media(w768) {
+            font-size: 18px;
+
+            br {
+                display: none;
+            }
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        flex-flow: column;
+        margin: 0 auto;
+        max-width: 420px;
+
+        @include media(w768) {
+            flex-direction: column;
+        }
+    }
+
+    &__buttons-link {
+        justify-content: center;
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__btn {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,73 @@
+.sec7 {
+    overflow: hidden;
+    
+
+    &:before,
+    &:after {
+        content: "";
+        background-color: white;
+        display: block;
+        height: 100px;
+
+        @include media(w1024) {
+            height: 60px;
+        }
+    }
+
+    &:before {
+
+        @include media(w768) {
+            content: none;
+        }
+    }
+
+    &__container {
+        font-family: $el;
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+        @include media(w1024) {
+            padding-top: 55px;
+            padding-bottom: 55px;
+        }
+
+        @include media(w768) {
+            padding-top: 64px;
+            padding-bottom: 64px;
+        }
+    }
+    
+    &__subtitle {
+        color: $main-pink-light;
+    }
+
+    &__content {
+        display: inline-block;
+        position: relative;
+
+        @include media(w768) {
+            
+            br {
+                display: none;
+            }
+        }
+    }
+
+    &__arrow {
+        position: absolute;
+        top: 40%;
+
+        @include media(w768) {
+            display: none;
+        }
+
+        &_left {
+            right: calc(100% + 40px);
+        }
+
+        &_right {
+            transform: scaleX(-1);
+            left: calc(100% + 40px);
+        }
+    }
+}

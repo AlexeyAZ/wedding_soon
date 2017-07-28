@@ -1,0 +1,239 @@
+$sec8-list-item-dot-size: 12px;
+$sec8-list-item-dot-size-tablet: 6px;
+
+.sec8 {
+    background-image: url("../img/sec8-bg.jpg");
+    padding: 140px 0;
+    position: relative;
+    z-index: 1;
+
+    @include media(w1024) {
+        padding: 85px 0;
+    }
+
+    @include media(w768) {
+        padding: 0;
+    }
+
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 50%;
+        z-index: -2;
+
+        @include media(w768) {
+            content: none;
+        }
+    }
+
+    &:before {
+        background-color: white;
+        left: 0;
+        opacity: 0.6;
+    }
+
+    &:after {
+        background-color: $main-pink-light;
+        right: 0;
+        opacity: 0.6;
+    }
+    
+    &__row {
+        display: flex;
+
+        @include media(w768) {
+            display: block;
+        }
+    }
+
+    &__col {
+        position: relative;
+        width: 50%;
+
+        @include media(w768) {
+            width: auto;
+        }
+
+        &_border {
+            padding-right: $container-side-padding-pc;
+
+            @include media(w768) {
+                padding: 60px 0;
+            }
+
+            &:before {
+                content: none;
+                background-color: white;
+                opacity: 0.8;
+                position: absolute;
+                top: 0;
+                left: -$container-side-padding-tablet;
+                bottom: 0;
+                right: -$container-side-padding-tablet;
+                z-index: -1;
+
+                @include media(w768) {
+                    content: "";
+                }
+            }
+        }
+
+        &_list {
+            padding-left: 80px;
+
+            &:before {
+                content: none;
+                background-color: $main-pink-light;
+                opacity: 0.6;
+                position: absolute;
+                top: 0;
+                left: -$container-side-padding-tablet;
+                bottom: 0;
+                right: -$container-side-padding-tablet;
+                z-index: -1;
+
+                @include media(w768) {
+                    content: "";
+                }
+            }
+
+            @include media(w1280) {
+                padding-left: 50px;
+            }
+
+            @include media(w1024) {
+                padding-left: 40px;
+            }
+
+            @include media(w768) {
+                padding: 60px 0;
+            }
+        }
+    }
+
+    &__border {
+        @include border-block(currentColor);
+        color: $main-pink-light;
+        display: flex;
+        align-items: center;
+        font-family: $el;
+        text-align: center;
+        height: 100%;
+
+        @include media(w768) {
+            display: block;
+            padding: 30vw 0;
+        }
+    }
+
+    &__list {
+        color: white;
+    }
+
+    &__list-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @include media(w768) {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    &__list-number {
+        flex-shrink: 0;
+        display: inline-block;
+        font-size: 65px;
+        font-family: $el;
+        font-weight: bold;
+        line-height: 1;
+        position: relative;
+        min-width: 140px;
+
+        @include media(w1024) {
+            font-size: 39px;
+            min-width: 80px;
+        }
+
+        @include media(w768) {
+            margin-bottom: 25px;
+            min-width: none;
+        }
+
+        &:after {
+            content: "";
+            transform: translateY(-50%);
+            background-color: white;
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            left: 90px;
+            vertical-align: middle;
+            height: $sec8-list-item-dot-size;
+            width: $sec8-list-item-dot-size;
+
+            @include media(w1024) {
+                left: 60px;
+                height: $sec8-list-item-dot-size-tablet;
+                width: $sec8-list-item-dot-size-tablet;
+            }
+
+            @include media(w768) {
+                transform: translate(-50%, 0);
+                top: calc(100% + 5px);
+                left: 50%;
+            }
+        }
+    }
+
+    &__list-text {
+        flex-shrink: 1;
+        font-size: 30px;
+
+        @include media(w1280) {
+            font-size: 25px;
+        }
+
+        @include media(w1024) {
+            font-size: 18px;
+        }
+
+        @include media(w768) {
+            display: block;
+            font-size: 22px;
+        }
+    }
+
+    &__flower {
+        transform: translate(0, 40%);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+
+        @include media(w1366) {
+            transform: translate(0, 60%);
+            max-width: 300px;
+        }
+
+        @include media(w1024) {
+            display: none;
+        }
+
+        @include media(w768) {
+            transform: translate(0, 35%);
+            display: block;
+            bottom: 100%;
+            max-width: 150px;
+        }
+    }
+}

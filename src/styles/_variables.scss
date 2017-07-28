@@ -1,0 +1,41 @@
+$trans: all 0.3s ease;
+
+$content-max-width: 1280px;
+
+$container-side-padding-pc: 30px;
+$container-side-padding-tablet: 15px;
+
+$input-font-size-pc: 20px;
+$input-font-size-tablet: 12px;
+$input-font-size-mobile: 13px;
+
+$btn-height-pc: 90px;
+$btn-height-tablet: 54px;
+$btn-height-mobile: 60px;
+
+$btn-font-size-pc: $input-font-size-pc;
+$btn-font-size-tablet: $input-font-size-tablet;
+$btn-font-size-mobile: $input-font-size-mobile;
+
+$main-pink-lightest: #f37cb3;
+$main-pink-lighten: #b2527b;
+$main-pink-light: #b30957;
+$main-pink: #98084a;
+
+$main-gray: #5b5c5f;
+
+$btn-main-bg: $main-pink-light;
+$footer-bg: $main-pink-light;
+$footer-text: white;
+
+$el: 'ElMessiri', Arial, Helvetica, sans-serif;
+$os: 'OpenSans', Arial, Helvetica, sans-serif;
+
+
+$color-main--lightest: #CBF3BF;
+$color-main--lighten:  #ACEF97;
+$color-main--light:    #74EA4F;
+$color-main:           #3FD411;
+$color-main--dark:     #39BA11;
+$color-main--darken:   #329F11;
+$color-main--darkest:  #184B09;

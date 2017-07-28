@@ -1,0 +1,22 @@
+extends templates/layout
+
+block vars
+    - var title = 'Скоро свадьба'
+
+block content
+    include components/form
+    section.sec.thanks
+        div.thanks__content
+            div.container.thanks__container
+                p.thanks__heading.
+                    <span id="thanksName"></span> менеджеры уже занимаются вашей заявкой
+                p.thanks__title.italic.
+                    Мы свяжемся с Вами в ближайшее время
+                p.thanks__subtitle.italic.
+                    График работы с 9.00 до 18.00<br> Поэтому, если вы оставили заявку<br> в нерабочее время, мы перезвоним<br> вам на следующий рабочий день
+                div.thanks__buttons
+                    a(href="doc/mk.pdf" target="_blank").btn-round.btn-round_main.thanks__buttons-link.
+                        Скачать презентацию
+                    a(href="/index.html").btn-round.btn-round_main.thanks__buttons-link.
+                        Вернуться на сайт
+                

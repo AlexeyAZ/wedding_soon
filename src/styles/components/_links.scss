@@ -1,0 +1,25 @@
+a {
+    display: inline-block;
+    transition: $trans;
+}
+
+.link {
+    text-decoration: none;
+
+    &_getcall {
+        border-bottom: 2px dotted currentColor;
+        font-size: 15px;
+
+        @include media(w1024) {
+            font-size: 14px;
+        }
+
+        @include media(w768) {
+            font-size: 12px;
+        }
+
+        &:hover {
+            color: $main-pink-light;
+        }
+    }
+}

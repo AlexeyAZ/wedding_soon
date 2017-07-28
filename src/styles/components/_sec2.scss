@@ -1,0 +1,163 @@
+.sec2 {
+    background-color: white;
+    overflow: hidden;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @include media(w1024) {
+        padding-top: 50px;
+    }
+
+    @include media(w768) {
+        padding-top: 0;
+    }
+
+    &__img {
+        
+    }
+
+    &__note {
+        padding: 30px 20px 30px 50px;
+        position: absolute;
+        width: 155%;
+
+        @include media(w768) {
+            margin-bottom: 30px;
+            padding: 50px 20px;
+            position: static;
+            width: auto;
+        }
+
+        &_one {
+            bottom: calc(100% + 40px);
+            right: 0;
+        }
+
+        &_two {
+            position: relative;
+            z-index: 1;
+
+            @include media(w768) {
+                margin-bottom: 0;
+                width: 100%;
+            }
+        }
+    }
+
+    &__note-text {
+
+        &_one {
+
+            @include media(w1280) {
+                font-size: 30px;
+            }
+
+            @include media(w1024) {
+                font-size: 24px;
+            }
+        }
+    }
+
+    &__photo-row {
+        display: flex;
+
+        @include media(w768) {
+            flex-flow: column;
+        }
+    }
+
+    &__photo-col {
+        position: relative;
+        width: 50%;
+
+        &_text {
+            padding-top: 6vw;
+
+            @include media(w768) {
+                padding-top: 8vw;
+            }
+        }
+
+        &_img {
+            padding-left: 70px;
+
+            @include media(w768) {
+                padding-left: 0;
+            }
+        }
+
+        @include media(w768) {
+            width: 100%;
+        }
+    }
+
+    &__photo-wrap {
+
+        @include media(w768) {
+            transform: translateY(-5%);
+            margin-left: -$container-side-padding-tablet;
+            overflow: hidden;
+            margin-bottom: 20px;
+            position: relative;
+            height: 100vw;
+        }
+    }
+
+    &__photo {
+        display: block;
+        width: 100%;
+
+        @include media(w768) {
+            transform: translate(-35%, 0);
+            width: 140%;
+        }
+    }
+
+    &__photo-text {
+
+        @include media(w1280) {
+            font-size: 25px;
+        }
+
+        @include media(w1024) {
+            font-size: 18px;
+        }
+
+        @include media(w768) {
+            margin-bottom: 30px
+        }
+    }
+
+    &__photo-block {
+        margin-bottom: 40px;
+    }
+
+    &__photo-block-text {
+        padding-bottom: 10vw;
+    }
+
+    &__btn {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        &_pc {
+
+            @include media(w768) {
+                display: none;
+            }
+        }
+
+        &_mobile {
+            display: none;
+
+            @include media(w768) {
+                display: inline-block;
+            }
+        }
+
+        @include media(w768) {
+            position: static;
+        }
+    }
+}

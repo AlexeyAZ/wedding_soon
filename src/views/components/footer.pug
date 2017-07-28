@@ -1,0 +1,33 @@
+footer.footer
+    div.container.footer__container
+        div.footer__block.footer__block_social
+            p.footer__text.footer__text_copy.
+                © 2017, Франшиза “Свадьба скоро”
+            div.footer__social
+                p.footer__text.footer__text_social-title.
+                    Мы в социальных сетях
+                ul.footer__social-list
+                    li.footer__social-item
+                        a(href="https://vk.com/svadba_skoro_irkutsk" target="_blank").footer__link.footer__link_social
+                            i.fa.fa-vk
+                    li.footer__social-item
+                        a(href="https://ok.ru/profile/566864806796?st._aid=PLMediaTopicAuthorMain&st.layer.cmd=PopLayerClose&st._forceSetHistory=true" target="_blank").footer__link.footer__link_social
+                            i.fa.fa-odnoklassniki
+                    li.footer__social-item
+                        a(href="https://www.facebook.com/%D0%A1%D0%B2%D0%B0%D0%B4%D1%8C%D0%B1%D0%B0-%D0%A1%D0%9A%D0%9E%D0%A0%D0%9E-%D1%81%D0%B2%D0%B0%D0%B4%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9-%D0%BF%D0%BE%D1%80%D1%82%D0%B0%D0%BB-1745007422476533/" target="_blank").footer__link.footer__link_social
+                            i.fa.fa-facebook
+        div.footer__block.footer__block_contacts
+            p.footer__text.footer__text_adress.
+                Наш офис: г. Иркутск, ул. Партизанская 28, оф.40
+            div.footer__contacts
+                a(href="doc/politic.pdf" target="_blank").footer__text.footer__link.footer__link_politic.
+                    Политика конфиденциальности
+                //p.footer__text
+                    |e-mail:
+                    a(href="mailto:uno@uno-perm.ru").footer__link.
+                        uno@uno-perm.ru
+        div.footer__block.footer__block_feedback
+            a(href="tel:" + attrPhone)&attributes({'data-phone': attrPhone}).footer__phone.
+                #{phone}
+            a().footer__link.footer__link_getcall.js-small-btn.
+                Заказать звонок

@@ -1,0 +1,17 @@
+.phone {
+    font-family: 'ElMessiri', Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+
+    @include media(w1024) {
+        font-size: 16px;
+    }
+
+    @include media(w768) {
+        font-size: 20px;
+    }
+
+    &:hover {
+        color: $main-pink-light;
+    }
+}

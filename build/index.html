@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Скоро свадьба</title>
+    <link rel="icon" type="image/png" href="img/favicon.png" sizes="16x16">
+    <link rel="stylesheet" href="styles/vendor.css">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;"></svg>
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__item header__item_descr">
+          <p class="mb0 header__descr header__descr_pc">Несложный бизнес в свадебной<br> сфере с окупаемостью<br> за 60 дней</p>
+          <p class="mb0 header__descr header__descr_mobile">Несложный бизнес<br> в свадебной сфере<br> с окупаемостью за 60 дней</p>
+        </div>
+        <div class="header__item header__item_logo"><a class="header__logo" href="/"><img class="header__logo-img" src="img/header-logo.png" alt=""></a></div>
+        <div class="header__item header__item_contacts"><a class="header__link phone phone_white header__link_phone" href="tel:88003331963" data-phone="88003331963">8 (800) 333-19-63</a><a class="header__link link link_getcall js-small-btn" href="">Заказать звонок</a></div>
+      </div>
+    </header>
+    <div class="form-wrap form-wrap_small">
+      <div class="form-container" id="smallFormContainer">
+        <div class="form__close"></div>
+        <p class="form__heading">Оставьте заявку на презентацию франшизы</p>
+        <form class="form" id="smallForm" data-next="#bigForm">
+          <input class="form__input" type="text" name="name" placeholder="Ваше имя" required="">
+          <input class="form__input" type="text" name="phone" placeholder="Ваш телефон" required="">
+          <input class="form__input" type="email" name="email" placeholder="Ваш email" required="">
+          <button class="btn-round form__btn form__btn_size js-big-btn">Скачать</button>
+          <label class="form__label">
+            <input type="checkbox" checked required><span class="form__label-security-text">Нажимая кнопку «Скачать», я даю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности</span>
+          </label>
+        </form>
+      </div>
+    </div>
+    <div class="form-wrap form-wrap_big">
+      <div class="form-container" id="bigFormContainer">
+        <div class="form__close"></div>
+        <p class="form__title">Спасибо!</p>
+        <p class="form__descr">В ближайшее время мы обработаем Вашу заявку. Для того, чтобы наш специалист мог максимально подробно ответить на все Ваши вопросы, заполните, пожалуйста, следующую форму. Заранее благодарим</p>
+        <form class="form" method="POST" id="bigForm">
+          <input class="js-hidden-name" type="hidden" name="name1">
+          <input class="js-hidden-phone" type="hidden" name="phone1">
+          <input class="js-hidden-email" type="hidden" name="email1">
+          <label class="form__label"><span>Введите Ваш город</span>
+            <input class="form__input" type="text" name="city" placeholder="" required="">
+          </label>
+          <label class="form__label"><span>Введите Ваш возраст</span>
+            <input class="form__input" type="text" name="age" placeholder="" required="">
+          </label>
+          <label class="form__label"><span>Наличие бизнеса / Опыт бизнеса</span>
+            <select class="form__select" name="business">
+              <option value="yes">Да</option>
+              <option value="no">Нет</option>
+            </select>
+          </label>
+          <label class="form__label"><span>Объем планируемых инвестиций</span>
+            <select class="form__select" name="volume">
+              <option value="100 000 - 250 000">100 000 — 250 000 рублей</option>
+              <option value="250 000 - 500 000">250 000 — 500 000 рублей</option>
+              <option value="500 000 - 750 000">500 000 — 750 000 рублей</option>
+              <option value="750 000 - 1 000 000">750 000 — 1 000 000 рублей</option>
+              <option value="1 000 000 - 1 500 000">1 000 000 — 1 500 000 рублей</option>
+              <option value="1 500 000 - 3 000 000">1 500 000 — 3 000 000 рублей</option>
+              <option value="3 000 000">Более 3 000 000 рублей</option>
+            </select>
+          </label>
+          <button class="btn-round form__btn form__btn_center">Получить предложение</button>
+          <label class="form__label">
+            <input type="checkbox" checked required><span class="form__label-security-text">Нажимая кнопку «Получить предложение», я даю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности</span>
+          </label>
+        </form>
+      </div>
+    </div>
+    <section class="sec sec1">
+      <div class="sec1__wrap">
+        <div class="sec1__content">
+          <div class="container">
+            <div class="sec1__border">
+              <h2 class="sec1__title mb0">Зарабатывайте<br> от 350 000 рублей в год</h2>
+              <p class="l mb0">на собственном свадебном интернет-портале<br> из любой точки мира</p>
+            </div>
+            <p class="s italic mb2">Ответы на важные вопросы и подробные<br> условия сотрудничества мы описали в презентации</p>
+            <button class="btn-round btn-round_main js-small-btn">Скачать презентацию</button>
+          </div>
+        </div>
+      </div>
+      <div class="sec1__note">
+        <div class="container">
+          <div class="sec1__note-border">
+            <div class="xl">
+              <p class="sec1__note-text sec1__note-text_gray mb0">Свадебный бизнес в России процветает:</p>
+              <p class="sec1__note-text sec1__note-text_pink mb0">эксперты предсказывают 10%-рост рынка<br> в ближайшие 2 года</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec sec2">
+      <div class="container">
+        <div class="photo-block sec2__photo-block">
+          <div class="photo-block__item photo-block__item_img">
+            <div class="photo-block__img-wrap"><img class="photo-block__img" src="img/sec2-img1.jpg" alt=""><img class="photo-block__img-border" src="img/decor-border-small.png" alt=""></div>
+          </div>
+          <div class="photo-block__item photo-block__item_text sec2__photo-block-text">
+            <div class="note sec2__note sec2__note_one">
+              <p class="xl mb0 sec2__note-text sec2__note-text_one">Однако влюблённые трепетно относятся к свадебному бюджету и часто отказываются от услуг крупных свадебных агентств</p>
+            </div>
+            <div class="photo-block__text">
+              <p class="m semibold">Они сами занимаются организацией и подбирают нужных специалистов:</p><img class="photo-block__arrow" src="img/decor-arrow-icon.png" alt="">
+              <p class="m italic">за последние два года число поисковых запросов на заказ ведущих, операторов, фотографов <span class="bold">выросло на 45%!</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="sec2__photo-row">
+          <div class="sec2__photo-col sec2__photo-col_text">
+            <p class="m semibold sec2__photo-text">В то же время людям удобнее выбирать нужных специалистов на одном сайте, а не путешествовать по сотням разных</p>
+            <div class="note sec2__note sec2__note_two">
+              <p class="xl mb0 sec2__note-text sec2__note-text_one">Именно поэтому свадебные интернет-порталы пользуются большой популярностью у пар и свадебных специалистов</p>
+            </div>
+            <button class="btn-round js-small-btn sec2__btn sec2__btn_pc">Скачать презентацию</button>
+          </div>
+          <div class="sec2__photo-col sec2__photo-col_img">
+            <div class="sec2__photo-wrap"><img class="sec2__photo" src="img/sec2-img2.jpg" alt=""></div>
+            <button class="btn-round js-small-btn sec2__btn sec2__btn_mobile">Скачать презентацию</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec sec3">
+      <div class="sec3__block sec3__block_top">
+        <div class="container">
+          <div class="sec3__top-text">
+            <h3 class="bold sec3__heading">Три года назад мы запустили портал «Свадьба скоро»,</h3>
+            <p class="m semibold mb0">
+              который помогает влюблённым находить нужных специалистов в несколько кликов
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="sec3__block sec3__block_bottom">
+        <div class="container">
+          <div class="sec3__bottom-text">
+            <p class="m italic">За три года наше свадебное «хобби» превратилось в интернет-портал по свадебным услугам № 1 в Иркутске</p>
+          </div>
+          <button class="btn-round js-small-btn">Скачать презентацию</button>
+        </div>
+      </div><img class="sec3__macbook" src="img/sec3-macbook.png" alt=""><img class="sec3__flowers" src="img/sec4-flower.png" alt="">
+    </section>
+    <section class="sec sec4">
+      <div class="container">
+        <div class="photo-block sec2__photo-block">
+          <div class="photo-block__item photo-block__item_img">
+            <div class="photo-block__img-wrap"><img class="photo-block__img" src="img/sec4-img1.jpg" alt=""><img class="photo-block__img-border" src="img/decor-border-small.png" alt=""></div>
+          </div>
+          <div class="photo-block__item photo-block__item_text">
+            <div class="note sec4__note">
+              <p class="xl mb0 sec4__note-text">Более 400 специалистов в области свадебных торжеств размещают у нас рекламу и информацию о себе</p>
+            </div>
+            <div class="photo-block__text sec4__photo-block-text">
+              <p class="m italic">Средний чек на размещение информации может составлять от 300 до 1 150 рублей в зависимости от Вашего города, а на размещение баннеров 5 000 рублей</p><img class="photo-block__arrow" src="img/decor-arrow-icon.png" alt="">
+              <p class="m semibold sec4__photo-block-text-bold">Благодаря этому выручка портала может достигать до 150 000 рублей в месяц в пик сезона</p>
+            </div>
+          </div>
+        </div><img class="sec4__flowers" src="img/sec4-flower.png" alt="">
+      </div>
+    </section>
+    <section class="sec sec5">
+      <div class="container">
+        <div class="sec5__row">
+          <div class="sec5__col sec5__col_left">
+            <p class="xl">Мы вышли на стабильную</p>
+            <h3 class="mb0 semibold">среднюю прибыль в 352 000 рублей в год</h3>
+          </div>
+          <div class="sec5__col sec5__col_right">
+            <p class="m mb1">узнали все «хитрости» работы в свадебной сфере</p>
+            <p class="xl ff-el mb0">и готовы передать свой опыт партнёрам в других городах!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec sec6">
+      <div class="container sec6__container">
+        <div class="sec6__content">
+          <h3 class="semibold mb1 sec6__heading">Станьте владельцем своего свадебного интернет — портала </h3>
+          <p class="m sec6__subtitle"><span class="semibold">уже через 17 дней</span>
+            после начала<br> сотрудничества с нами
+          </p>
+          <button class="btn-round js-small-btn">Скачать презентацию</button>
+        </div>
+      </div>
+    </section>
+    <section class="sec sec7">
+      <div class="container sec7__container ta-center">
+        <div class="sec7__content">
+          <p class="xl">Благодаря нашему опыту вы получите всё,<br> чтобы запуститься и окупить все вложения </p>
+          <p class="xl semibold sec7__subtitle mb0">уже через 2 месяца после старта!</p><img class="sec7__arrow sec7__arrow_left" src="img/decor-arrow-icon.png" alt=""><img class="sec7__arrow sec7__arrow_right" src="img/decor-arrow-icon.png" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="sec sec8">
+      <div class="container">
+        <div class="sec8__row">
+          <div class="sec8__col sec8__col_border">
+            <div class="sec8__border">
+              <h2 class="bold mb0">Что включено во франшизу?</h2>
+            </div>
+          </div>
+          <div class="sec8__col sec8__col_list">
+            <ul class="sec8__list">
+              <li class="sec8__list-item"><span class="sec8__list-number">01</span><span class="sec8__list-text">Право использования бренда «Свадьба скоро»</span></li>
+              <li class="sec8__list-item"><span class="sec8__list-number">02</span><span class="sec8__list-text">Готовый интернет портал</span></li>
+              <li class="sec8__list-item"><span class="sec8__list-number">03</span><span class="sec8__list-text">Макеты коммерческих предложений и рекламных роликов для ТВ и радио</span></li>
+              <li class="sec8__list-item"><span class="sec8__list-number">04</span><span class="sec8__list-text">Поддержка от основателя компании</span></li>
+              <li class="sec8__list-item"><span class="sec8__list-number">05</span><span class="sec8__list-text">Техническая поддержка работы портала</span></li>
+            </ul>
+          </div>
+        </div>
+      </div><img class="sec8__flower" src="img/sec8-flower.png" alt="">
+    </section>
+    <section class="sec sec9">
+      <div class="container">
+        <div class="sec9__top">
+          <p class="italic sec9__top-text mb1">Смотрите полный состав франшизы в презентации:</p>
+          <button class="btn-round js-small-btn">Скачать презентацию</button>
+        </div>
+        <div class="sec9__border-wrap">
+          <div class="sec9__border">
+            <p class="l mb2">Всё что вам нужно делать — общаться с фотографами,<br> операторами и свадебными ведущими и<br> продавать им услуги портала</p>
+            <p class="semibold xl">Остальное — уже сделали мы!</p><img class="sec9__border-img" src="img/decor-border-big.png" alt="">
+          </div><img class="sec9__border-flower" src="img/sec9-flower.png" alt="">
+        </div>
+      </div>
+      <div class="sec9__note">
+        <div class="container sec9__note-container">
+          <h3 class="semibold mb0">Франшиза «Свадьба скоро» — одна из самых простых и доступных</h3>
+        </div>
+      </div>
+      <div class="container sec9__bottom-container">
+        <p class="m semibold mb1">Она подходит абсолютно всем: </p>
+        <p class="m">опыт работы в сфере не требуется, а вложения в 50 000 рублей на франшизу и рекламу окупятся почти сразу</p>
+      </div><img class="sec9__women" src="img/sec9-women.png" alt="">
+    </section>
+    <section class="sec sec10">
+      <div class="container ta-center color-white">
+        <h3 class="mb0 ff-el bold">Если у вас творческий склад ума и вы любите общаться с людьми — у вас всё получится!</h3>
+      </div>
+    </section>
+    <section class="sec sec11">
+      <div class="container">
+        <div class="sec11__row">
+          <div class="sec11__col sec11__col_text">
+            <p class="xl bold ff-el sec11__title">Готовы помогать молодожёнам создавать незабываемые свадьбы</p>
+            <p class="m sec11__subtitle">
+              и зарабатывать в формате «онлайн» из любой точки мира
+              <span class="bold">от 350 000</span>
+              рублей в год?
+            </p>
+          </div>
+          <div class="sec11__col"><img class="sec11__flowers-mobile" src="img/sec11-flowers.png" alt="">
+            <div class="bottom-form-container" id="bottomFormContainer">
+              <p class="m bottom-form__title">
+                Сделайте первый шаг —
+                <span class="bold">проверьте, свободен ли ваш город</span>
+                для сотрудничества?
+              </p>
+              <form class="bottom-form" data-next="#bigForm" id="bottomForm">
+                <label class="bottom-form__label">
+                  <input class="input" type="text" name="city" placeholder="Ваш город" required>
+                </label>
+                <label class="bottom-form__label">
+                  <input class="input" type="text" name="phone" placeholder="Телефон" required>
+                </label>
+                <label class="bottom-form__label">
+                  <input class="input" type="email" name="email" placeholder="E-mail" required>
+                </label>
+                <button class="btn-round btn-round_main bottom-form__btn">Проверить</button>
+                <label class="bottom-form__label">
+                  <input type="checkbox" checked required><span>Нажимая кнопку «Проверить», я даю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности</span>
+                </label>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div><img class="sec11__flowers" src="img/sec11-flowers.png" alt="">
+    </section>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__block footer__block_social">
+          <p class="footer__text footer__text_copy">© 2017, Франшиза «Свадьба скоро»</p>
+          <div class="footer__social">
+            <p class="footer__text footer__text_social-title">Мы в социальных сетях</p>
+            <ul class="footer__social-list">
+              <li class="footer__social-item"><a class="footer__link footer__link_social" href="https://vk.com/svadba_skoro_irkutsk" target="_blank"><i class="fa fa-vk"></i></a></li>
+              <li class="footer__social-item"><a class="footer__link footer__link_social" href="https://ok.ru/profile/566864806796?st._aid=PLMediaTopicAuthorMain&amp;st.layer.cmd=PopLayerClose&amp;st._forceSetHistory=true" target="_blank"><i class="fa fa-odnoklassniki"></i></a></li>
+              <li class="footer__social-item"><a class="footer__link footer__link_social" href="https://www.facebook.com/%D0%A1%D0%B2%D0%B0%D0%B4%D1%8C%D0%B1%D0%B0-%D0%A1%D0%9A%D0%9E%D0%A0%D0%9E-%D1%81%D0%B2%D0%B0%D0%B4%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9-%D0%BF%D0%BE%D1%80%D1%82%D0%B0%D0%BB-1745007422476533/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__block footer__block_contacts">
+          <p class="footer__text footer__text_adress">Наш офис: г. Иркутск, ул. Партизанская 28, оф. 40</p>
+          <div class="footer__contacts"><a class="footer__text footer__link footer__link_politic" href="doc/politic.pdf" target="_blank">Политика конфиденциальности</a>
+            <!--p.footer__text
+            |e-mail:
+            a(href="mailto:uno@uno-perm.ru").footer__link.
+                uno@uno-perm.ru
+            -->
+          </div>
+        </div>
+        <div class="footer__block footer__block_feedback"><a class="footer__phone" href="tel:88003331963" data-phone="88003331963">8 (800) 333-19-63</a><a class="footer__link footer__link_getcall js-small-btn">Заказать звонок</a></div>
+      </div>
+    </footer>
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>

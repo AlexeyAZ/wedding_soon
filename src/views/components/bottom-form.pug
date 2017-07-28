@@ -1,0 +1,21 @@
+div#bottomFormContainer.bottom-form-container
+    p.m.bottom-form__title
+        |Сделайте первый шаг – 
+        |
+        span.bold.
+            проверьте, свободен ли ваш город
+        |
+        |для сотрудничества?
+    form(data-next="#bigForm")#bottomForm.bottom-form
+        label.bottom-form__label
+            input(type="text" name="city" placeholder="Ваш город" required).input
+        label.bottom-form__label
+            input(type="text" name="phone" placeholder="Телефон" required).input
+        label.bottom-form__label
+            input(type="email" name="email" placeholder="E-mail" required).input
+        button.btn-round.btn-round_main.bottom-form__btn.
+            Проверить
+        label.bottom-form__label
+            input(type="checkbox" checked required)
+            span.
+                Нажимая кнопку "Проверить", я даю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности

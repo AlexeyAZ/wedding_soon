@@ -1,0 +1,65 @@
+.sec6 {
+    background-image: url("../img/sec6-bg.jpg");
+    background-color: white;
+    overflow: hidden;
+    
+    &__container {
+        padding-left: 24%;
+
+        @include media(w1024) {
+            padding-left: 34%;
+        }
+
+        @include media(w768) {
+            padding-left: $container-side-padding-tablet;
+        }
+    }
+
+    &__content {
+        padding: 150px 0 135px 100px;
+        position: relative;
+        z-index: 1;
+
+        @include media(w1024) {
+            padding: 90px 0 90px 50px;
+        }
+
+        @include media(w768) {
+            padding: 50px 0;
+        }
+
+        &:before {
+            content: "";
+            background-color: white;
+            opacity: 0.8;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100vw;
+            z-index: -1;
+
+            @include media(w768) {
+                left: -$container-side-padding-tablet;
+                opacity: 0.9;
+            }
+        }
+    }
+
+    &__heading {
+        color: $main-pink-light;
+        font-family: $el;
+    }
+
+    &__subtitle {
+        margin-bottom: 4em;
+
+        @include media(w1024) {
+            margin-bottom: 3em;
+        }
+
+        @include media(w768) {
+            margin-bottom: 2em;
+        }
+    }
+}

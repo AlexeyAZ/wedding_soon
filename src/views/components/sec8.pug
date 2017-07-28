@@ -1,0 +1,18 @@
+- var sec8List = ["Право использования бренда «Свадьба скоро»", "Готовый интернет портал", "Макеты коммерческих предложений и рекламных роликов для ТВ и радио", "Поддержка от основателя компании", "Техническая поддержка работы портала"];
+
+section.sec.sec8
+    div.container
+        div.sec8__row
+            div.sec8__col.sec8__col_border
+                div.sec8__border
+                    h2.bold.mb0.
+                        Что включено во франшизу?
+            div.sec8__col.sec8__col_list
+                ul.sec8__list
+                    each item, index in sec8List
+                        li.sec8__list-item
+                            span.sec8__list-number.
+                                0#{index + 1}
+                            span.sec8__list-text.
+                                #{item}
+    img(src="img/sec8-flower.png", alt="").sec8__flower
